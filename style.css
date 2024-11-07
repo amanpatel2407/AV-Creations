@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* import font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+/*------------- global---------- */
+
+h2 {
+  font-size: 40px !important;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.list-icon {
+  color: #D2641E;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.span-orange {
+  color: #D2641E;
+}
+
+.btn {
+  background-color: #D2641E !important;
+  border: none !important;
+
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px !important;
+  }
+
+}
+
+strong {
+  color: #000;
+}
+
+.txt-secondary {
+  font-weight: 400 !important;
+  color: #666;
+}
+
+/* -----------navbar style------------- */
+
+.navbar {
+  box-shadow: 0 25px 40px #fbf3ed;
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+
+.phone-number {
+  font-weight: 600;
+}
+
+
+.phone-icon {
+  background-color: #D2641E;
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.nav-link {
+  font-weight: 800 !important;
+  color: #000 !important;
+}
+
+.btn-consult {
+  border-color: #D2641E;
+  color: #D2641E;
+}
+
+.btn-consult:hover {
+  background-color: #D2641E;
+  color: rgb(252, 244, 239);
+}
+
+.main-btn {
+  border: 1px solid #E9E1DC;
+  padding: 8px 15px;
+  padding-right: 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  position: relative;
+}
+
+.main-btn span {
+  position: absolute;
+  right: -27px;
+  height: 45px;
+  width: 45px;
+  top: 0;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D2641E;
+  color: #fff;
+}
+
+@media (max-width: 425px) {
+
+  .phone-number,
+  .phone-icon {
+    display: none;
+  }
+
+}
+
+/*------------------------ header style ---------------------------- */
+
+#header {
+  padding-top: 150px;
+  min-height: 100vh;
+  width: 100%;
+  background: url(./assets/images/bg/header-bg.png) white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heading {
+  font-size: 20px;
+}
+
+.secondry-heading {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.secondry-heading span {
+  color: #d2641e;
+}
+
+.cercle-box {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 3px solid #d2641e;
+  overflow: hidden;
+}
+
+.cercle-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.cercle-1 {
+  transform: translateY(50px);
+  margin-right: 10px;
+}
+
+.cercle-2 {
+  transform: translateY(-20px);
+}
+
+/* Responsive styling */
+@media (max-width: 1440px) {
+  .secondry-heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  #header {
+    padding-top: 100px;
+    height: auto;
+  }
+
+  .heading {
+    margin-top: 20px;
+  }
+
+  .secondry-heading {
+    font-size: 36px;
+  }
+
+  .cercle-box {
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .cercle-1 {
+    transform: translateY(0);
+    margin-right: 0;
+  }
+
+  .coming-soon {
+    left: 50%;
+    transform: translateX(-10%);
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .secondry-heading {
+    font-size: 28px;
+  }
+
+  .cercle-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+  }
+
+  .coming-soon {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 16px;
+  }
+
+  .secondry-heading {
+    font-size: 24px;
+  }
+
+  .date-boxes {
+    gap: 5px;
+  }
+
+  .date-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .date-box span {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .cercle-box {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Coming Soon countdown styling */
+.coming-soon {
+  transform: translate(-200px, 70px);
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: #D2641E;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.coming-soon .coming-soon-container {
+  text-align: center;
+}
+
+.coming-soon .title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.coming-soon .date-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.coming-soon .date-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #D2641E;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.coming-soon .date-box span {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  color: #D2641E;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon .month-year {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.coming-soon-container p {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+  .coming-soon {
+    transform: translate(0, 0);
+  }
+
+}
+
+
+
+/* ------------------------- imagien section style --------------------------- */
+
+/* General styling for the Imagine section */
+.imagine-section {
+  padding: 2rem 0;
+}
+
+
+/* Title section styling */
+.imagine-title-section {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Main title styling */
+.imagine-main-title {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+/* Text styling */
+.imagine-text {
+  color: #6666;
+  /* line-height: 1.6; */
+}
+
+/* Button styling */
+.imagine-button {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.imagine-button span {
+  font-size: 1.2rem;
+}
+
+/* -------------------- Exhibitors  styling ------------------ */
+.exhibitors-section {
+  padding: 0.5rem 0;
+  background: url(./assets/images/Exhibitors/Group\ 121.png) center no-repeat;
+  background-size: cover;
+}
+
+/* Title styling */
+.title-section h2 {
+  font-size: 28px;
+}
+
+/* Book Consult button styling */
+.book-consult-btn {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.book-consult-btn span {
+  font-size: 1.2rem;
+}
+
+/* Image styling */
+.exhibitor-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Exhibitors list styling */
+.exhibitor-list {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+.exhibitor-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.bullet {
+  color: #e45826;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .exhibitor-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+
+
+/* ----------------------------------- benifits style ----------------------------------------- */
+
+.benefits-title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+}
+
+.benefits-item {
+  font-weight: 600;
+}
+
+.benefits-desc {
+  color: #666;
+}
+
+.benefits-button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.benefits-icon {
+  color: #e67e22;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .benefits-title {
+    font-size: 24px;
+  }
+
+  .benefits-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* -----------------------stall details------------------------- */
+
+.stall-title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+}
+
+.stall-description {
+  color: #666;
+  font-size: 16px;
+
+}
+
+.stall-link {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.stall-details-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stall-details-icon {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #e67e22;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stall-details-text {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  width: 150px;
+  margin: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stall-title {
+    font-size: 24px;
+  }
+
+  .stall-details-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .stall-details-text {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------contact us-------------------------------- */
+
+.contact-us {
+  background: url(./assets/images/contact-us/bg.png )center no-repeat;
+  background-size: cover;
+}
+
+
+.contact-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #333;
+
+}
+
+.contact-subtitle {
+  color: #777;
+  font-size: 16px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E8EAF1;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #BDC5CE;
+  height: 120px;
+}
+
+.contact-card h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-card p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+  word-wrap: break-word;
+  /* Ensures the email wraps */
+  word-break: break-all;
+  /* Optionally, you can use this instead */
+}
+
+.contact-form {
+  border-radius: 8px;
+  /* height: 100%; */
+  border: 1px solid #BDC5CE;
+
+}
+
+
+.form-title {
+  text-align: center;
+}
+
+.contact-form-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.submit-button {
+  background-color: #e67e22;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+  /* .contact-form {
+    height: 100%;
+  } */
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .submit-button {
+    padding: 12px;
+  }
+}
+
+
+/* ------------------map section--------------- */
+
+
+.map {
+  border-radius: 10px;
+  height: 450px;
+  width: 100%;
+  border: none;
+}
+
+
+
+/* -------------------footer------------------ */
+
+footer.footer {
+  background-color: #f7e3d5;
+  /* Background color */
+  font-family: Arial, sans-serif;
+}
+
+.footer-icon {
+  width: 50px;
+  /* Adjust size as needed */
+}
+
+.footer-icon {
+  width: 150px;
+}
+
+footer h5 {
+  color: #c43b1d;
+  font-weight: bold;
+}
+
+footer p,
+.address p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.footer-p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.address p {
+  font-weight: 600;
+
+}
+
+.illustration {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
