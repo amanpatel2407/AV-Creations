@@ -8,6 +8,10 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /*------------- global---------- */
 
@@ -31,6 +35,10 @@ h2 {
   background-color: #D2641E !important;
   border: none !important;
 
+}
+
+.contact-link{
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -94,6 +102,7 @@ strong {
   border-radius: 50px;
   background-color: #fff;
   position: relative;
+  color: #000;
 }
 
 .main-btn span {
@@ -534,6 +543,7 @@ strong {
 @media (max-width: 768px) {
   .stall-title {
     font-size: 24px;
+    width: 100%;
   }
 
   .stall-details-icon {
